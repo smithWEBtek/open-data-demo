@@ -13,205 +13,113 @@ class UsersController < ApplicationController
   def planning
 
   zxcv = <<-JSON
-  {
-    "version": "1.1",
-    "uri": "https://github.com/open-contracting/sample-data/raw/1.1/fictional-example/ocds-213czf-000-00001.json",
-    "publishedDate": "2011-01-10T09:30:00Z",
-    "publisher": {
-      "name": "Open Data Services Co-operative Limited",
-      "scheme": "GB-COH",
-      "uid": "9506232.0",
-      "uri": "http://data.companieshouse.gov.uk/doc/company/09506232"
-    },
-    "license": "http://opendatacommons.org/licenses/pddl/1.0/",
-    "publicationPolicy": "https://github.com/open-contracting/sample-data/",
-    "releases": [
-      {
-        "ocid": "ocds-213czf-000-00001",
-        "id": "ocds-213czf-000-00001-01-planning",
-        "language": "en",
-        "date": "2009-03-15T14:45:00Z",
-        "initiationType": "tender",
-        "tag": [
-          "planning"
-        ],
-        "parties": [
-          {
-            "id": "GB-LAC-E09000003",
+  ⊖{
+    "ocid": "ocds-213czf-000-00001",
+    "id": "ocds-213czf-000-00001-05-contract",
+    "date": "2010-05-10T10:30:00Z",
+    "language": "en",
+    "tag": ⊖[
+        "contract"
+    ],
+    "initiationType": "tender",
+    "parties": ⊖[
+       ⊖{
+            "identifier": ⊕{...},
             "name": "London Borough of Barnet",
-            "roles": [
-              "buyer"
-            ],
-            "identifier": {
-              "scheme": "GB-LAC",
-              "id": "E09000003",
-              "legalName": "London Borough of Barnet"
-            },
-            "address": {
-              "streetAddress": "4, North London Business Park, Oakleigh Rd S",
-              "locality": "London",
-              "region": "London",
-              "postalCode": "N11 1NP",
-              "countryName": "United Kingdom"
-            },
-            "contactPoint": {
-              "name": "Procurement Team",
-              "email": "procurement-team@example.com",
-              "telephone": "01234 345 346",
-              "faxNumber": "01234 345 345",
-              "url": "http://example.com/contact/"
-            }
-          }
-        ],
-        "buyer": {
-          "id": "GB-LAC-E09000003",
-          "name": "London Borough of Barnet"
+            "address": ⊕{...},
+            "contactPoint": ⊕{...},
+            "roles": ⊕[ ... ],
+            "id": "GB-LAC-E09000003"
         },
-        "planning": {
-          "budget": {
-            "id": "6801ad388f3a38b7740dde20108c58b35984ee91",
-            "description": "Budget allocation for highway maintenance, aligned with 2015 strategic plan. ",
-            "amount": {
-              "amount": 6700000,
-              "currency": "GBP"
-            },
-            "project": "Central Junction Cycle Scheme",
-            "projectID": "SP001",
-            "uri": "https://openspending.org/uk-barnet-budget/entries/6801ad388f3a38b7740dde20108c58b35984ee91"
-          },
-          "rationale": "The 2009 Strategic Plan identifies a need for an improved cycle route in the centre of town.",
-          "documents": [
-            {
-              "id": "1.0",
-              "documentType": "procurementPlan",
-              "title": "Area Wide Cycle Improvements - Procurement Plan",
-              "description": "The overall strategic framework for procurement to enhance cycle provision.",
-              "url": "http://example.com/opencontracting/documents/planning/highways/procurementPlan.pdf",
-              "datePublished": "2009-01-05T00:00:00Z",
-              "format": "application/pdf",
-              "language": "en"
-            },
-            {
-              "id": "2.0",
-              "documentType": "needsAssessment",
-              "title": "Cycle provision - Needs Assessment",
-              "description": "Needs assessment for provision for cyclists in the centre of town.",
-              "url": "http://example.com/opencontracting/documents/ocds-213czf-000-00001/needsAssessment.pdf",
-              "datePublished": "2009-01-15T00:00:00Z",
-              "format": "application/pdf",
-              "language": "en"
-            }
-          ],
-          "milestones": [
-            {
-              "id": "1.0",
-              "type": "preProcurement",
-              "title": "Strategic outline procurement plan approval",
-              "description": "Approval of the strategic outline procurement plan by the procurement steering group",
-              "status": "met",
-              "dueDate": "2009-03-14T17:00:00Z",
-              "dateMet": "2009-03-14T17:00:00Z"
-            },
-            {
-              "id": "2.0",
-              "type": "engagement",
-              "title": "Public consultation",
-              "description": "A public consultation on the proposed cycle lane will be held at the council offices",
-              "status": "scheduled",
-              "dueDate": "2009-05-01T09:00:00Z"
-            }
-          ]
-        },
-        "tender": {
-          "id": "ocds-213czf-000-00001-01-planning",
-          "title": "Planned cycle lane improvements",
-          "description": "The authority plans to tender for improvements to the cycle lane in early 2010. This notice provides advanced notice of the intention to tender, and details to upcoming consultation events.",
-          "mainProcurementCategory": "works",
-          "status": "planned",
-          "minValue": {
-            "amount": 500000,
-            "currency": "GBP"
-          },
-          "value": {
-            "amount": 1000000,
-            "currency": "GBP"
-          },
-          "procurementMethod": "open",
-          "procurementMethodDetails": "In open procedures, any interested economic operator may submit a tender in response to a contract notice. ",
-          "procurementMethodRationale": "An open competitive tender is required by EU Rules",
-          "awardCriteria": "bestProposal",
-          "awardCriteriaDetails": "The best proposal, subject to value for money requirements, will be accepted.",
-          "tenderPeriod": {
-            "startDate": "2010-02-01T00:00:00Z",
-            "durationInDays": 31
-          },
-          "enquiryPeriod": {
-            "durationInDays": 14
-          },
-          "contractPeriod": {
-            "startDate": "2010-06-01T00:00:00Z",
-            "endDate": "2011-05-31T23:59:00Z",
-            "durationInDays": 365
-          },
-          "procuringEntity": {
-            "id": "GB-LAC-E09000003",
-            "name": "London Borough of Barnet"
-          },
-          "documents": [
-            {
-              "id": "3.0",
-              "documentType": "x_consultationDocument",
-              "title": "Consultation on cycle provision",
-              "description": "A consultation document inviting citizen input into cycle provision.",
-              "url": "http://example.com/consultations/cycle-provision/",
-              "datePublished": "2010-02-15T00:00:00Z",
-              "format": "text/html",
-              "language": "en"
-            },
-            {
-              "id": "4.0",
-              "documentType": "x_map",
-              "title": "Map of affected areas",
-              "description": "A map showing areas affected by the planned highway updates. Available from local libraries.",
-              "datePublished": "2010-02-15T00:00:00Z",
-              "format": "offline/print",
-              "language": "en"
-            }
-          ],
-          "items": [
-            {
-              "id": "1.0",
-              "description": "Cycle lane improvements",
-              "classification": {
-                "scheme": "CPV",
-                "id": "45233130.0",
-                "description": "Construction work for highways",
-                "uri": "http://cpv.data.ac.uk/code-45233130"
-              },
-              "quantity": 10,
-              "unit": {
-                "name": "Miles",
-                "id": "SMI",
-                "scheme": "UNCEFACT",
-                "value": {
-                  "amount": 100000,
-                  "currency": "GBP"
-                }
-              },
-              "additionalClassifications": [
-                {
-                  "scheme": "CPV",
-                  "id": "45233162-2",
-                  "description": "Cycle path construction work",
-                  "uri": "http://cpv.data.ac.uk/code-45233162.html"
-                }
-              ]
-            }
-          ]
+       ⊖{
+            "identifier": ⊕{...},
+            "additionalIdentifiers": ⊕[ ... ],
+            "name": "AnyCorp Cycle Provision",
+            "address": ⊕{...},
+            "contactPoint": ⊕{...},
+            "roles": ⊕[ ... ],
+            "id": "GB-COH-1234567844"
         }
-      }
+    ],
+    "buyer": ⊕{...},
+    "awards": ⊖[
+       ⊖{
+            "id": "ocds-213czf-000-00001-award-01",
+            "title": "Award of contract to build new cycle lanes in the centre of town.",
+            "description": "AnyCorp Ltd has been awarded the contract to build new cycle lanes in the centre of town.",
+            "status": "active",
+            "date": "2010-05-10T10:30:00Z",
+            "value": ⊖{
+                "amount": 11000000,
+                "currency": "GBP"
+            },
+            "suppliers": ⊕[ ... ],
+            "items": ⊖[
+               ⊖{
+                    "id": "0001",
+                    "description": "string",
+                    "classification": ⊕{...},
+                    "additionalClassifications": ⊕[ ... ],
+                    "quantity": 8,
+                    "unit": ⊕{...}
+                }
+            ],
+            "contractPeriod": ⊕{...},
+            "documents": ⊖[
+               ⊖{
+                    "id": "0007",
+                    "documentType": "notice",
+                    "title": "Award notice",
+                    "description": "Award of contract to build new cycle lanes in the centre of town to AnyCorp Ltd.",
+                    "url": "http://example.com/tender-notices/ocds-213czf-000-00001-04.html",
+                    "datePublished": "2010-05-10T10:30:00Z",
+                    "format": "text/html",
+                    "language": "en"
+                }
+            ]
+        }
+    ],
+    "contracts": ⊖[
+       ⊖{
+            "id": "ocds-213czf-000-00001-contract-01",
+            "awardID": "ocds-213czf-000-00001-award-01",
+            "title": "Contract to build new cycle lanes in the centre of town.",
+            "description": ⊕"A contract has been signed between the Council and AnyCorp Ltd for construction of new cycle lanes i ...",
+            "status": "active",
+            "period": ⊖{
+                "startDate": "2010-07-01T00:00:00Z",
+                "endDate": "2011-08-01T23:59:00Z"
+            },
+            "value": ⊖{
+                "amount": 11000000,
+                "currency": "GBP"
+            },
+            "items": ⊖[
+               ⊖{
+                    "id": "0001",
+                    "description": "string",
+                    "classification": ⊕{...},
+                    "additionalClassifications": ⊕[ ... ],
+                    "quantity": 8,
+                    "unit": ⊕{...}
+                }
+            ],
+            "dateSigned": "2015-06-10T14:23:12Z",
+            "documents": ⊖[
+               ⊖{
+                    "id": "0008",
+                    "documentType": "contractSigned",
+                    "title": "Signed Contract",
+                    "description": "The Signed Contract for Cycle Path Construction",
+                    "url": "http://example.com/contracts/ocds-213czf-000-00001",
+                    "datePublished": "2015-06-10T16:43:12Z",
+                    "format": "application/pdf",
+                    "language": "en"
+                }
+            ]
+        }
     ]
-  }
+}
 
 JSON
 render json: zxcv

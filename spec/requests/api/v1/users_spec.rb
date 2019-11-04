@@ -13,13 +13,3 @@ describe "Fetching the current user" do
     end
   end
 end
-
-describe "Validate planning schema" do
-  context "against release.schema" do
-    it "matches" do
-      get '/planning'
-
-      expect(response).to match_response_schema("release")
-    end
-  end
-end
