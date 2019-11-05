@@ -165,7 +165,7 @@
         }
       },
   patternProperties: {
-  ^(rationale_(((([A-Za-z
+  (rationale_(((([A-Za-z
         ]{
           2,
           3
@@ -481,7 +481,7 @@
         }
       },
   patternProperties: {
-  ^(title_(((([A-Za-z
+  (title_(((([A-Za-z
         ]{
           2,
           3
@@ -540,7 +540,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -599,7 +599,7 @@
             "null"
           ]
         },
-  ^(procurementMethodRationale_(((([A-Za-z
+  (procurementMethodRationale_(((([A-Za-z
         ]{
           2,
           3
@@ -658,7 +658,7 @@
             "null"
           ]
         },
-  ^(awardCriteriaDetails_(((([A-Za-z
+  (awardCriteriaDetails_(((([A-Za-z
         ]{
           2,
           3
@@ -717,7 +717,7 @@
             "null"
           ]
         },
-  ^(submissionMethodDetails_(((([A-Za-z
+  (submissionMethodDetails_(((([A-Za-z
         ]{
           2,
           3
@@ -776,7 +776,7 @@
             "null"
           ]
         },
-  ^(eligibilityCriteria_(((([A-Za-z
+  (eligibilityCriteria_(((([A-Za-z
         ]{
           2,
           3
@@ -953,7 +953,7 @@
         }
       },
   patternProperties: {
-  ^(title_(((([A-Za-z
+  (title_(((([A-Za-z
         ]{
           2,
           3
@@ -1012,7 +1012,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -1212,7 +1212,7 @@
         }
       },
   patternProperties: {
-  ^(title_(((([A-Za-z
+  (title_(((([A-Za-z
         ]{
           2,
           3
@@ -1271,7 +1271,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -1485,7 +1485,7 @@
         }
       },
   patternProperties: {
-  ^(title_(((([A-Za-z
+  (title_(((([A-Za-z
         ]{
           2,
           3
@@ -1544,7 +1544,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -1693,7 +1693,7 @@
         }
       },
   patternProperties: {
-  ^(title_(((([A-Za-z
+  (title_(((([A-Za-z
         ]{
           2,
           3
@@ -1752,7 +1752,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -1887,7 +1887,7 @@
             "null"
           ]
         },
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -1946,7 +1946,7 @@
             "null"
           ]
         },
-  ^(project_(((([A-Za-z
+  (project_(((([A-Za-z
         ]{
           2,
           3
@@ -2226,7 +2226,7 @@
         }
       },
   patternProperties: {
-  ^(name_(((([A-Za-z
+  (name_(((([A-Za-z
         ]{
           2,
           3
@@ -2383,7 +2383,7 @@
             }
           },
   patternProperties: {
-  ^(name_(((([A-Za-z
+  (name_(((([A-Za-z
             ]{
               2,
               3
@@ -2446,7 +2446,7 @@
         }
       },
   patternProperties: {
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -2644,7 +2644,7 @@
         }
       },
   patternProperties: {
-  ^(description_(((([A-Za-z
+  (description_(((([A-Za-z
         ]{
           2,
           3
@@ -2747,7 +2747,7 @@
         }
       },
   patternProperties: {
-  ^(legalName_(((([A-Za-z
+  (legalName_(((([A-Za-z
         ]{
           2,
           3
@@ -2855,7 +2855,7 @@
         }
       },
   patternProperties: {
-  ^(countryName_(((([A-Za-z
+  (countryName_(((([A-Za-z
         ]{
           2,
           3
@@ -2964,7 +2964,7 @@
         }
       },
   patternProperties: {
-  ^(name_(((([A-Za-z
+  (name_(((([A-Za-z
         ]{
           2,
           3
